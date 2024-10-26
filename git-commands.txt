@@ -1,0 +1,57 @@
+To list all files(including hidden ones) -
+    In cmd - 
+        dir /a
+    In GitBash - 
+        Get-ChildItem -Force
+-------------------------------------------
+
+To create folder in windows -
+    mkdir <foldername>
+-------------------------------------------
+
+To create file -
+
+    1.  In Powershell - 
+        type nul > <filename>
+        It creates file with 0 bytes.
+
+    2.  In GitBash - 
+        touch <filename>
+        It creates file with 0 bytes.
+
+    3.  In cmd - 
+        echo.> your_file.txt
+        echo. - will create a file with one empty line in it.
+-----------------------------------------------------------------
+
+To clone repository - 
+    git clone <link>
+---------------------------------------------
+
+To get status -
+    git status
+---------------------------------------------
+
+To stage a file - 
+    1.  git add <filename>
+        It stage only particular file
+    2.  git add .
+        It stage all the files which are modified
+--------------------------------------------------------
+
+To commit a file - 
+    git commit -m "commit message"
+--------------------------------------------------------
+
+To push -
+    git push origin main
+    It pushesh new files, changes to github repository
+---------------------------------------------------------
+
+To initilize git in local - 
+    git init
+
+---------------------------------------------------------
+
+To push local repo to remote repo - 
+    git remote add origin <link>
